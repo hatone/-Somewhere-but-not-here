@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
     <title>Somewhere but not here</title>
     <style>
-               * {
-                   margin: 0;
-                   padding: 0;
-                   box-sizing: border-box;
-               }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Noto Sans JP', sans-serif;
@@ -141,7 +141,7 @@
             text-align: center;
             font-size: 1.2rem;
             line-height: 2;
-            background: rgba(255, 255, 255, 0.1); 
+            background: rgba(255, 255, 255, 0.1);
             padding: 2rem;
             border-radius: 8px;
             backdrop-filter: blur(4px);
@@ -155,6 +155,21 @@
             margin-bottom: 3rem;
             line-height: 1.4;
             letter-spacing: -0.01em;
+        }
+
+
+        a {
+            color: #CCCCCC;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #CCCCCC;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+            text-decoration: none;
         }
 
         @media (max-width: 768px) {
@@ -189,72 +204,76 @@
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <video id="background-video" autoplay loop muted playsinline>
-            <source src="background.mp4" type="video/mp4">
-            お使いのブラウザは動画タグをサポートしていません。
-        </video>
-    </div>
+<div class="video-container">
+    <video id="background-video" autoplay loop muted playsinline>
+        <source src="background.mp4" type="video/mp4">
+        お使いのブラウザは動画タグをサポートしていません。
+    </video>
+</div>
 
-    <div class="content">
-        <div class="content-inner">
-                <h1 class="title">Somewhere but not here</h1>
+<div class="content">
+    <div class="content-inner">
+        <h1 class="title">Somewhere but not here</h1>
 
-            <div class="description">
-                <p>「ここではないどこか」の一端に触れるとき、自分自身の存在と、不在を自覚する。ぶどう畑はどこまでも広がって、薄く青い空の色、乾いた風のにおいが身体に沁みわたる。わたしは希釈されて、同時に輪郭を強くする。新しいにおいと、知らない気配、色と音を手繰り寄せる。</p>
-                <p>カルフォルニア、ナパにてkidlitがひと月の滞在から着想を得て制作、現地にてマスタリングを行ったフルアルバム。M2ではドラマーYOYOKAと初のLA収録を行ったほか、ヴァイオリニスト加藤綾子を招き、M9には保刈久明によるCamera obscuraのRemixを収録。</p>
-            </div>
+        <div class="description">
+            <p>
+                「ここではないどこか」の一端に触れるとき、自分自身の存在と、不在を自覚する。ぶどう畑はどこまでも広がって、薄く青い空の色、乾いた風のにおいが身体に沁みわたる。わたしは希釈されて、同時に輪郭を強くする。新しいにおいと、知らない気配、色と音を手繰り寄せる。</p>
+            <p>
+                カルフォルニア、ナパにてkidlitがひと月の滞在から着想を得て制作、現地にてマスタリングを行ったフルアルバム。M2ではドラマーYOYOKAと初のLA収録を行ったほか、ヴァイオリニスト加藤綾子を招き、M9には保刈久明によるCamera
+                obscuraのRemixを収録。</p>
+        </div>
 
-            <div class="video-embed">
-                <iframe
-                        src="https://www.youtube.com/embed/BdQZXB5IhOc"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                </iframe>
-            </div>
+        <div class="video-embed">
+            <iframe
+                    src="https://www.youtube.com/embed/BdQZXB5IhOc"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
 
-            <div class="tracklist">
-                <ol>
-                    <li>Over the Hills</li>
-                    <li>Somewhere but not here</li>
-                    <li>Camera obscura</li>
-                    <li>The wind blows</li>
-                    <li>Friends</li>
-                    <li>Antonym</li>
-                    <li>Exhibition</li>
-                    <li>Through the silence</li>
-                    <li>Camera obscura -another angle remix-</li>
-                </ol>
-            </div>
+        <div class="tracklist">
+            <ol>
+                <li>Over the Hills</li>
+                <li>Somewhere but not here</li>
+                <li>Camera obscura</li>
+                <li>The wind blows</li>
+                <li>Friends</li>
+                <li>Antonym</li>
+                <li>Exhibition</li>
+                <li>Through the silence</li>
+                <li>Camera obscura -another angle remix-</li>
+            </ol>
+        </div>
 
-            <div class="credits">
-                <p>All Music & Lyrics(except M1,M2) by kidlit<br>
-                    Lyrics by foolen (M1,M2)<br>
-                    Drums: YOYOKA (M2)<br>
-                    Violin: Ayako Kato (M2)</p>
+        <div class="credits">
+            <p>All Music & Lyrics(except M1,M2) by <a href="https://www.kidlit.today/" target="_blank">kidlit</a><br>
+                Lyrics by foolen (M1,M2)<br>
+                Drums: <a href="https://yoyoka.jp/" target="_blank">YOYOKA</a> (M2)<br>
+                Violin: <a href="https://ayako-kato.com/" target="_blank">Ayako Kato</a> (M2)</p>
 
-                <p>Remixed by Hisaaki Hogari (M9)</p>
+            <p>Remixed by <a href="https://hisaakihogari.jimdofree.com/" target="_blank">Hisaaki Hogari</a> (M9)</p>
 
-                <p>Piano & E.Piano Recorded by Wataru Sato (M1,M4,M5)<br>
-                    Mixed by Seigo Itoh (M1,M2,M4,M6,M8)<br>
-                    Mastered by David Landon</p>
+            <p>Piano & E.Piano Recorded by <a href="https://www.bookshelfstudio.jp/" target="_blank">Wataru Sato</a>
+                (M1,M4,M5)<br>
+                Mixed by <a href="https://www.mixcapez.com/" target="_blank">Seigo Itoh</a> (M1,M2,M4,M6,M8)<br>
+                Mastered by <a href="https://www.whiprecords.com/" target="_blank">David Landon</a></p>
 
-                <p>Designed by Tomoyuki Arima<br>
-                    Coordinated by Hatone<br>
-                    Produced by Diverse System</p>
-            </div>
+            <p>Designed by <a href="https://tatsdesign.com/" target="_blank">Tomoyuki Arima</a> <br>
+                Coordinated by <a href="https://x.com/hatone" target="_blank">Hatone</a> <br>
+                Produced by <a href="https://diverse.jp/" target="_blank">Diverse System</a></p>
         </div>
     </div>
-    <div class="right-content">
-        <img src="Somewhere-but-not-here_告知向け_artwork.avif" alt="Artwork" class="artwork">
-        <div class="release-info">
-            <p>2024.12.30 release</p>
-            <p>price　2,500 yen</p>
-            <p>shop　DIVERSE DIRECT</p>
-            <p>space　ス-31a</p>
-        </div>
+</div>
+<div class="right-content">
+    <img src="Somewhere-but-not-here_告知向け_artwork.avif" alt="Artwork" class="artwork">
+    <div class="release-info">
+        <p>2024.12.30 release</p>
+        <p>price　2,500 yen</p>
+        <p>shop　<a href="https://www.diverse.direct/" target="_blank">DIVERSE DIRECT</a></p>
+        <p>space　ス-31a</p>
     </div>
+</div>
 </body>
 </html>
