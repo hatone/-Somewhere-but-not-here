@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
+    <title>Somewhere but not here</title>
+    <style>
+               * {
+                   margin: 0;
+                   padding: 0;
+                   box-sizing: border-box;
+               }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+            color: white;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            min-height: 100vh;
+            width: 50%;
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        .content-inner {
+            padding: 5rem 4rem;
+        }
+
+        .title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            font-style: italic;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+        }
+
+        .description {
+            margin-bottom: 4rem;
+        }
+
+        .description p {
+            margin-bottom: 1.5rem;
+        }
+
+        .info {
+            margin-bottom: 4rem;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .tracklist {
+            margin-bottom: 4rem;
+        }
+
+        .tracklist ol {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+
+        .tracklist li {
+            margin-bottom: 0.5rem;
+        }
+
+        .credits {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .credits p {
+            margin-bottom: 1.5rem;
+        }
+
+        .video-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9のアスペクト比 */
+            margin-bottom: 4rem;
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .right-content {
+            width: 50%;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .artwork {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        .release-info {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 2;
+            background: rgba(255, 255, 255, 0.1); 
+            padding: 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(4px);
+        }
+
+        .title {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 200;
+            font-style: italic;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            line-height: 1.4;
+            letter-spacing: -0.01em;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                width: 100%;
+            }
+
+            .content-inner {
+                padding: 3rem 2rem;
+            }
+
+            .title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .description, .info, .tracklist {
+                margin-bottom: 3rem;
+            }
+
+            .right-content {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 2rem;
+            }
+
+            .artwork {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video id="background-video" autoplay loop muted playsinline>
+            <source src="background.mp4" type="video/mp4">
+            お使いのブラウザは動画タグをサポートしていません。
+        </video>
+    </div>
+
+    <div class="content">
+        <div class="content-inner">
+                <h1 class="title">Somewhere but not here</h1>
+
+            <div class="description">
+                <p>「ここではないどこか」の一端に触れるとき、自分自身の存在と、不在を自覚する。ぶどう畑はどこまでも広がって、薄く青い空の色、乾いた風のにおいが身体に沁みわたる。わたしは希釈されて、同時に輪郭を強くする。新しいにおいと、知らない気配、色と音を手繰り寄せる。</p>
+                <p>カルフォルニア、ナパにてkidlitがひと月の滞在から着想を得て制作、現地にてマスタリングを行ったフルアルバム。M2ではドラマーYOYOKAと初のLA収録を行ったほか、ヴァイオリニスト加藤綾子を招き、M9には保刈久明によるCamera obscuraのRemixを収録。</p>
+            </div>
+
+            <div class="video-embed">
+                <iframe
+                        src="https://www.youtube.com/embed/BdQZXB5IhOc"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="tracklist">
+                <ol>
+                    <li>Over the Hills</li>
+                    <li>Somewhere but not here</li>
+                    <li>Camera obscura</li>
+                    <li>The wind blows</li>
+                    <li>Friends</li>
+                    <li>Antonym</li>
+                    <li>Exhibition</li>
+                    <li>Through the silence</li>
+                    <li>Camera obscura -another angle remix-</li>
+                </ol>
+            </div>
+
+            <div class="credits">
+                <p>All Music & Lyrics(except M1,M2) by kidlit<br>
+                    Lyrics by foolen (M1,M2)<br>
+                    Drums: YOYOKA (M2)<br>
+                    Violin: Ayako Kato (M2)</p>
+
+                <p>Remixed by Hisaaki Hogari (M9)</p>
+
+                <p>Piano & E.Piano Recorded by Wataru Sato (M1,M4,M5)<br>
+                    Mixed by Seigo Itoh (M1,M2,M4,M6,M8)<br>
+                    Mastered by David Landon</p>
+
+                <p>Designed by Tomoyuki Arima<br>
+                    Coordinated by Hatone<br>
+                    Produced by Diverse System</p>
+            </div>
+        </div>
+    </div>
+    <div class="right-content">
+        <img src="Somewhere-but-not-here_告知向け_artwork.avif" alt="Artwork" class="artwork">
+        <div class="release-info">
+            <p>2024.12.30 release</p>
+            <p>price　2,500 yen</p>
+            <p>shop　DIVERSE DIRECT</p>
+            <p>space　ス-31a</p>
+        </div>
+    </div>
+</body>
+</html>
